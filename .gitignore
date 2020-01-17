@@ -1,4 +1,6 @@
-*.swp
-*.save
-*.tmp
-*.class
+calcula
+*.o
+.class
+.save
+.swp
+.tmp
