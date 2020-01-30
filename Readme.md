@@ -15,8 +15,11 @@
 >
 >***[3. El fitxer pom.xml](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#3-el-fitxer-pomxml)***
 >
->***[4. El fitxer pom.xml](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#3-el-fitxer-pomxml)***
-
+>***[4. Compilació, neteja i construcció del projecte](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#4-compilaci%C3%B3-neteja-i-construcci%C3%B3-del-projecte)***
+>
+>***[5. Entenent el cicle de vida de construcció](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#5-entenent-el-cicle-de-vida-de-construcci%C3%B3)***
+>
+>***[6. Entenent el cicle de vida de construcció](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#5-entenent-el-cicle-de-vida-de-construcci%C3%B3)***
 
 #    **-Activitat pràctica-**
 
@@ -415,7 +418,7 @@ Tot i que cada fase és responsable d'una part del cicle de vida de construcció
 
 Disposeu de molta més informació al respecte a la bibliografía, però de moment, amb el que hem vist, ja podeu tindre una idea general del cicle de construcció i de la forma de treballar amb Maven.
 
-# 2.6. El mode interactiu de Maven
+# 6. El mode interactiu de Maven
 
 A l'apartat anterior hem vist com crear un projecte Maven amb el mode batch. Maven, permet també un mode interactiu, que ens va guiant en la creació del nostre projecte.
 
