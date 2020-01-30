@@ -365,8 +365,7 @@ target
 Per tal d'executar l'aplicació, hem d'indicar el classpath (opció -cp) i llençar l'aplicació, reemplaçant les barres del camí des del classpath fins la classe per punts (com/ieseljust/app/App -> com/ieseljust/app/App).
 
 ```
-$ java -cp target/classes com.ieseljust.edd.App 
-Hello World!
+
 ```
 
 Per altra banda, si el que volem és netejar el projecte, farem:
@@ -376,7 +375,7 @@ mvn clean
 ...
 ```
 
-Que com veurem, ens haurà esborrat la carpeta target anterior.
+Per a eliminar la carpeta target anterior.
 
 Finalment, per fer la construcció i empaquetat en jar del projecte, farem:
 
