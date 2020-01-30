@@ -105,8 +105,16 @@ Podeu consultar de forma ampliada més informació sobre Maven als següents enl
 
 # 2. Primer exemple amb Maven
 
-Anem a crear un projecte de tipus Hola Món des de zero, amb les ajudes que ens proveeix Maven. Per a això farem ús del mecanisme d'arquetipus que ofereix. Un arquetipus no és més que un patró o model a partir del qual creem l'esquelet del nostre projecte.
-2.1. Generació del projecte a partir de l'arquetipus
+
+   
+    Anem a crear un projecte per al vostre codi de la calculadora. Per a això, partireu de l'arquetipus quickstart de maven per defecte, i haureu de crear les dues classes necessàries per al seu funcionament. Aneu en compte amb els noms dels paquets.
+
+Podeu utilitzar qualsevol dels mecanismes i IDEs què hem vist (eina mvn pròpia de Maven, el plugin de Maven per a VSCode, o bé Netbeans).
+
+
+Un arquetipus no és més que un patró o model a partir del qual creem l'esquelet del nostre projecte.
+
+#2.1. Generació del projecte a partir de l'arquetipus
 
 Anem a començar amb la creació d'aquest primer exemple. Per a això, llançarem la següent ordre:
 
@@ -191,7 +199,7 @@ $ tree
 
 Com veiem, ha creat la carpeta del projecte myHelloMVN amb el fitxer pom.xml, que descriu el projecte segons el Project Ojbect Model (POM). Dins d'aquesta carpeta tenim la carpeta src, amb els fitxers font i de tests, degudament organitzats en carpetes segons el nom de domini completament qualificat.
 
-2.2. El fitxer pom.xml
+# 2.2. El fitxer pom.xml
 
 El fitxer pom.xml descriu la configuració del projecte en Maven, i proporciona la major part d'informació necessària per a la seua construcció. Pot arribar a ser un fitxer llarg i complex, però no és necessari entendre tot el seu contingut per traure tota l'efectivitat de Maven.
 
@@ -237,27 +245,8 @@ Per tal d'evitar açò, cal especificar un parell de propietats per al projecte.
   [...]
 ```
 
-2.3. Hola Món!
 
-L'arquetipus que hem utilitzat per generar l'aplicació, maven-archetype-quickstart, ens crea directament un esquelet d'aplicació del tipus Hola Món, directament. Si accedim al fitxer src/main/java/com/ieseljust/app/App.java, veurem un codi bastant familiar:
-
-```
-package com.ieseljust.edd;
-
-/**
- * Hello world!
- *
- */
-public class App
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
-    }
-}
-```
-
-2.4. Compilació, neteja i construcció del projecte
+2.3. Compilació, neteja i construcció del projecte
 
 Una vegada tenim l'esquelet de l'aplicació generat, ja podem realitzar la seua compilació i construcció.
 
@@ -397,7 +386,7 @@ $ java -cp target/myHelloMVN-1.0-SNAPSHOT.jar com.ieseljust.edd.App
 Hello World!
 ```
 
-2.5. Entenent el cicle de vida de construcció
+# 2.4. Entenent el cicle de vida de construcció
 
 Disposeu informació ampliada sobre aquest punt en:
 
@@ -423,7 +412,8 @@ Fases del cicle de construcció i plugins
 Tot i que cada fase és responsable d'una part del cicle de vida de construcció, la forma de portar-la a terme pot variar entre projectes. Açò s'aconsegueix mitjançant la declaració d'objectius (goals) de plugins associats a cada fase de construcció al fitxer pom.xml. Un objectiu d'un plugin representa una tasca específica en la construcció i gestió d'un projecte, i pot estar associat a zero o més fases de construcció. Si no està associat a cap fase, aquest objectiu pot executar-se fora del cicle de vida, invocant-lo directament.
 
 Disposeu de molta més informació al respecte a la bibliografía, però de moment, amb el que hem vist, ja podeu tindre una idea general del cicle de construcció i de la forma de treballar amb Maven.
-2.6. El mode interactiu de Maven
+
+# 2.6. El mode interactiu de Maven
 
 A l'apartat anterior hem vist com crear un projecte Maven amb el mode batch. Maven, permet també un mode interactiu, que ens va guiant en la creació del nostre projecte.
 
@@ -496,10 +486,4 @@ Com ja sabem, quan instal·lem el Java Extension Pack, una de les extensions que
     Oferix dreceres de teclat per llençar objectius de Maven comuns: clean, validate, compile test, package, verify, install, site i deploy,
     Manteniment d'un historial d'ordres per tornar a llançar ordres recents.
 
-
-    TO-DO
-
-    Creeu un projecte Maven per al vostre codi de la calculadora. Per a això, partireu de l'arquetipus quickstart de maven per defecte, i haureu de crear les dues classes necessàries per al seu funcionament. Aneu en compte amb els noms dels paquets.
-
-    Podeu utilitzar qualsevol dels mecanismes i IDEs què hem vist (eina mvn pròpia de Maven, el plugin de Maven per a VSCode, o bé Netbeans).
 
