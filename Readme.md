@@ -236,10 +236,27 @@ myHelloMVN/
 
 El fitxer pom.xml descriu la configuració del projecte en Maven, i proporciona la major part d'informació necessària per a la seua construcció. Pot arribar a ser un fitxer llarg i complex, però no és necessari entendre tot el seu contingut per traure tota l'efectivitat de Maven.
 
-Veiem el contingut dle nostre fitxer:
+Veiem el contingut del nostre fitxer per defecte:
 
 ```
-xml <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"> <modelVersion>4.0.0</modelVersion> <groupId>com.ieseljust.edd</groupId> <artifactId>myHelloMVN</artifactId> <packaging>jar</packaging> <version>1.0-SNAPSHOT</version> <name>myHelloMVN</name> <url>http://maven.apache.org</url> <dependencies> <dependency> <groupId>junit</groupId> <artifactId>junit</artifactId> <version>3.8.1</version> <scope>test</scope> </dependency> </dependencies> </project>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ieseljust.edd.calc</groupId>
+  <artifactId>myHelloMVN</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>myHelloMVN</name>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
+
 ```
 
 El contingut del fitxer és bastant intuïtiu:
@@ -604,9 +621,6 @@ package: com.ieseljust.edd
 ```
 
 Amb açò, tindrem una estructura de projecte idèntica a la del projecte anterior i un fitxer pom.xml equivalent. Per tal de compilar-lo, haurem de fer les modificacions corresponents al fitxer pom.xml per tal d'evitar els errors amb les versions 1.5 de java, i llençar el mvn compile per compilar o el mvn package per obtindre el paquet.
-3. El plugin Maven for Java per a VSCode
-
-Com ja sabem, quan instal·lem el Java Extension Pack, una de les extensions que ens arrossega és l'extensió Maven for Java. Aquesta extensió ens ofereix un explorador de projectes Maven i afig les següent funcionalitats:
 
     Suport per a la generació de projectes a partir d'arquetipus Maven,
     Suport per generar POM de forma eficient,
