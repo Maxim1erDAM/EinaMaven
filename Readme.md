@@ -591,32 +591,28 @@ Choose a number: 7: 5
 I algunes dades més que ja coneixem:
 
 ```
+2560: remote -> za.co.absa.hyperdrive:component-archetype (-)
+Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): 1471: 1471
+Choose org.apache.maven.archetypes:maven-archetype-quickstart version: 
+1: 1.0-alpha-1
+2: 1.0-alpha-2
+3: 1.0-alpha-3
+4: 1.0-alpha-4
+5: 1.0
+6: 1.1
+7: 1.3
+8: 1.4
+Choose a number: 8: 5
 Define value for property 'groupId': ieseljust
-Define value for property 'artifactId': holaMon
+Define value for property 'artifactId': myHelloMVN
 Define value for property 'version' 1.0-SNAPSHOT: : 
-Define value for property 'package' ieseljust: : com.ieseljust.edd
+Define value for property 'package' ieseljust: : com.ieseljust.edd.calc.App
 Confirm properties configuration:
 groupId: ieseljust
-artifactId: holaMon
+artifactId: myHelloMVN
 version: 1.0-SNAPSHOT
-package: com.ieseljust.edd
+package: com.ieseljust.edd.calc.App
  Y: : Y
-[INFO] ----------------------------------------------------------------------------
-[INFO] Using following parameters for creating project from Old (1.x) Archetype: maven-archetype-quickstart:1.0
-[INFO] ----------------------------------------------------------------------------
-[INFO] Parameter: basedir, Value: .../exemples_java/mvn2
-[INFO] Parameter: package, Value: com.ieseljust.edd
-[INFO] Parameter: groupId, Value: ieseljust
-[INFO] Parameter: artifactId, Value: holaMon
-[INFO] Parameter: packageName, Value: com.ieseljust.edd
-[INFO] Parameter: version, Value: 1.0-SNAPSHOT
-[INFO] project created from Old (1.x) Archetype in dir: .../exemples_java/mvn2/holaMon
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  02:12 min
-[INFO] Finished at: 2020-01-02T09:46:04+01:00
-[INFO] ------------------------------------------------------------------------
 
 ```
 
