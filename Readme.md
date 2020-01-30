@@ -211,8 +211,6 @@ Veiem el contingut dle nostre fitxer:
 ```
 xml <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"> <modelVersion>4.0.0</modelVersion> <groupId>com.ieseljust.edd</groupId> <artifactId>myHelloMVN</artifactId> <packaging>jar</packaging> <version>1.0-SNAPSHOT</version> <name>myHelloMVN</name> <url>http://maven.apache.org</url> <dependencies> <dependency> <groupId>junit</groupId> <artifactId>junit</artifactId> <version>3.8.1</version> <scope>test</scope> </dependency> </dependencies> </project>
 ```
-El fitxer quedaría de la seguent manera:
-
 
 El contingut del fitxer és bastant intuïtiu:
 
@@ -247,6 +245,8 @@ Per tal d'evitar açò, cal especificar un parell de propietats per al projecte.
   <dependencies>
   [...]
 ```
+
+El fitxer "pom.xml" quedaría de la seguent manera:
 
 
 # 4. Compilació, neteja i construcció del projecte
