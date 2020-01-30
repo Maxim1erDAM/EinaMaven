@@ -11,7 +11,7 @@
 >
 >***[1.-Introducció: Apache Maven.](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#1-introducci%C3%B3-apache-maven)***
 >
->***[# 2. Primer exemple amb Maven](https://github.com/Maxim1erDAM/EinaMaven#2-primer-exemple-amb-maven)***
+>***[2. Primer exemple amb Maven](https://github.com/Maxim1erDAM/EinaMaven#2-primer-exemple-amb-maven)***
 >
 >***[3. El fitxer pom.xml](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#3-el-fitxer-pomxml)***
 >
