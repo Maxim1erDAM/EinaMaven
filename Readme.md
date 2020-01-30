@@ -11,15 +11,15 @@
 >
 >***[1.-Introducció: Apache Maven.](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#1-introducci%C3%B3-apache-maven)***
 >
->***[2. Primer exemple amb Maven](https://github.com/Maxim1erDAM/EinaMaven#2-primer-exemple-amb-maven)***
+>***[2.-Primer exemple amb Maven](https://github.com/Maxim1erDAM/EinaMaven#2-primer-exemple-amb-maven)***
 >
->***[3. El fitxer pom.xml](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#3-el-fitxer-pomxml)***
+>***[3.-El fitxer pom.xml](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#3-el-fitxer-pomxml)***
 >
->***[4. Compilació, neteja i construcció del projecte](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#4-compilaci%C3%B3-neteja-i-construcci%C3%B3-del-projecte)***
+>***[4.-Compilació, neteja i construcció del projecte](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#4-compilaci%C3%B3-neteja-i-construcci%C3%B3-del-projecte)***
 >
->***[5. Entenent el cicle de vida de construcció](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#5-entenent-el-cicle-de-vida-de-construcci%C3%B3)***
+>***[5.-Entenent el cicle de vida de construcció](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#5-entenent-el-cicle-de-vida-de-construcci%C3%B3)***
 >
->***[6. Entenent el cicle de vida de construcció](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#5-entenent-el-cicle-de-vida-de-construcci%C3%B3)***
+>***[6.-Entenent el cicle de vida de construcció](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#5-entenent-el-cicle-de-vida-de-construcci%C3%B3)***
 
 #    **-Activitat pràctica-**
 
