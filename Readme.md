@@ -13,7 +13,10 @@
 >
 >***[# 2. Primer exemple amb Maven](https://github.com/Maxim1erDAM/EinaMaven#2-primer-exemple-amb-maven)***
 >
->***[3. El fitxer pom.xml](https://github.com/Maxim1erDAM/Unitat4/blob/master/Readme.md#3-make-i-el-fitxer-makefile)***
+>***[3. El fitxer pom.xml](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#3-el-fitxer-pomxml)***
+>
+>***[4. El fitxer pom.xml](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#3-el-fitxer-pomxml)***
+
 
 #    **-Activitat pràctica-**
 
@@ -245,7 +248,7 @@ Per tal d'evitar açò, cal especificar un parell de propietats per al projecte.
 ```
 
 
-2.3. Compilació, neteja i construcció del projecte
+# 4. Compilació, neteja i construcció del projecte
 
 Una vegada tenim l'esquelet de l'aplicació generat, ja podem realitzar la seua compilació i construcció.
 
@@ -385,7 +388,7 @@ $ java -cp target/myHelloMVN-1.0-SNAPSHOT.jar com.ieseljust.edd.App
 Hello World!
 ```
 
-# 2.4. Entenent el cicle de vida de construcció
+# 5. Entenent el cicle de vida de construcció
 
 Disposeu informació ampliada sobre aquest punt en:
 
