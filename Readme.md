@@ -202,14 +202,36 @@ alumne@alumne-VirtualBox:~/Escritorio/provaeinaMaven$ tree
     └── com
         └── ieseljust
             └── edd
-                └── App.java
+                ├── App.java
+                └── Calculadora.java
 
-16 directories, 4 files
+16 directories, 5 files
 
 ```
 
-Com veiem, ha creat la carpeta del projecte myHelloMVN amb el fitxer pom.xml, que descriu el projecte segons el Project Ojbect Model (POM). Dins d'aquesta carpeta tenim la carpeta src, amb els fitxers font i de tests, degudament organitzats en carpetes segons el nom de domini completament qualificat.
+Com veiem, ha creat la carpeta del projecte myHelloMVN amb el fitxer pom.xml, que descriu el projecte segons el Project Ojbect Model (POM). Dins d'aquesta carpeta tenim la carpeta src, amb els fitxers font i de tests, degudament organitzats en carpetes segons el nom de domini completament qualificat, nomes mos a copiat la clase principal, nosaltres tenim que encarregarmos de copiar el "src" complet amb les seues classes o depèndencies.
 
+```
+alumne@alumne-VirtualBox:~/Escritorio/provaeinaMaven$ tree myHelloMVN/
+myHelloMVN/
+├── pom.xml
+└── src
+    ├── main
+    │   └── java
+    │       └── com
+    │           └── ieseljust
+    │               └── edd
+    │                   ├── App.java
+    │                   └── Calculadora.java
+    └── test
+        └── java
+            └── com
+                └── ieseljust
+                    └── edd
+                        └── AppTest.java
+
+11 directories, 4 files
+```
 # 3. El fitxer pom.xml
 
 El fitxer pom.xml descriu la configuració del projecte en Maven, i proporciona la major part d'informació necessària per a la seua construcció. Pot arribar a ser un fitxer llarg i complex, però no és necessari entendre tot el seu contingut per traure tota l'efectivitat de Maven.
