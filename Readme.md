@@ -137,12 +137,13 @@ Veiem els diferents paràmetres que hem proporcionat a Maven:
 Amb tot açò, l'eixida de l'ordre anterior (i després de descarregar algun programari addicional...) és la següent:
 
 ```
-$ mvn archetype:generate -DgroupId=com.ieseljust.edd -DartifactId=myHelloMVN -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
-...
+alumne@alumne-VirtualBox:~/Escritorio/provaeinaMaven$ mvn archetype:generate -DgroupId=com.ieseljust.edd -DartifactId=myHelloMVN -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
 [INFO] Scanning for projects...
-Downloading...
-
-...
 [INFO] 
 [INFO] ------------------< org.apache.maven:standalone-pom >-------------------
 [INFO] Building Maven Stub Project (No POM) 1
@@ -154,25 +155,24 @@ Downloading...
 [INFO] 
 [INFO] 
 [INFO] --- maven-archetype-plugin:3.1.2:generate (default-cli) @ standalone-pom ---
-Downloading...
-...
+[INFO] Generating project in Batch mode
 [INFO] ----------------------------------------------------------------------------
 [INFO] Using following parameters for creating project from Old (1.x) Archetype: maven-archetype-quickstart:1.0
 [INFO] ----------------------------------------------------------------------------
-[INFO] Parameter: basedir, Value: .../exemples_java/mvn1
+[INFO] Parameter: basedir, Value: /home/alumne/Escritorio/provaeinaMaven
 [INFO] Parameter: package, Value: com.ieseljust.edd
 [INFO] Parameter: groupId, Value: com.ieseljust.edd
 [INFO] Parameter: artifactId, Value: myHelloMVN
 [INFO] Parameter: packageName, Value: com.ieseljust.edd
 [INFO] Parameter: version, Value: 1.0-SNAPSHOT
-[INFO] project created from Old (1.x) Archetype in dir: .../exemples_java/mvn1/myHelloMVN
+[INFO] project created from Old (1.x) Archetype in dir: /home/alumne/Escritorio/provaeinaMaven/myHelloMVN
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  30.233 s
-[INFO] Finished at: 2020-01-02T09:13:05+01:00
+[INFO] Total time:  4.326 s
+[INFO] Finished at: 2020-01-30T13:20:58+01:00
 [INFO] ------------------------------------------------------------------------
-...
+
 
 ```
 
