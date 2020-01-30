@@ -58,6 +58,8 @@ Com veiem ens indica que no tenim el paquet instal·lat, però que podem instal�
 
 Per tal d'instal·lar el paquet, ho haurem de fer com a administradors:
 
+```
+
 $ sudo apt update
 ...
 $ sudo apt install maven
@@ -66,6 +68,8 @@ S'està llegint la llista de paquets… Fet
 S'està construint l'arbre de dependències
 S'està llegint la informació de l'estat… Fet
 ...
+
+```
 S'instal·laran els següents paquets extres:
   libwagon-file-java libwagon-http-shaded-java
 S'instal·laran els paquets NOUS següents:
