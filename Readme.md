@@ -69,7 +69,6 @@ S'està construint l'arbre de dependències
 S'està llegint la informació de l'estat… Fet
 ...
 
-```
 S'instal·laran els següents paquets extres:
   libwagon-file-java libwagon-http-shaded-java
 S'instal·laran els paquets NOUS següents:
@@ -77,6 +76,10 @@ S'instal·laran els paquets NOUS següents:
 0 actualitzats, 3 nous a instal·lar, 0 a suprimir i 72 no actualitzats.
 S'ha d'obtenir 1787 kB d'arxius.
 Després d'aquesta operació s'empraran 2261 kB d'espai en disc addicional.
+
+
+
+```
 
 Com veiem, el paquet maven arrossega algunes dependències, el que ens dóna una visió de la magnitud del projecte front a ant. Indiquem que sí que volem realitzar la instal·lació, i esperem que aquesta finalitze.
 
