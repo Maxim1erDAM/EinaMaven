@@ -191,21 +191,25 @@ alumne@alumne-VirtualBox:~/Escritorio/provaeinaMaven$ tree
 │       │       └── com
 │       │           └── ieseljust
 │       │               └── edd
-│       │                   └── App.java
+│       │                   └── calc
+│       │                       └── App
+│       │                           └── App.java
 │       └── test
 │           └── java
 │               └── com
 │                   └── ieseljust
 │                       └── edd
-│                           └── AppTest.java
+│                           └── calc
+│                               └── App
+│                                   └── AppTest.java
 └── src
     └── com
         └── ieseljust
             └── edd
-                ├── App.java
-                └── Calculadora.java
+                └── calc
+                    ├── App.java
+                    └── Calculadora.java
 
-16 directories, 5 files
 
 ```
 
@@ -221,16 +225,19 @@ myHelloMVN/
     │       └── com
     │           └── ieseljust
     │               └── edd
-    │                   ├── App.java
-    │                   └── Calculadora.java
+    │                   └── calc
+    │                       └── App
+    │                           └── App.java
     └── test
         └── java
             └── com
                 └── ieseljust
                     └── edd
-                        └── AppTest.java
+                        └── calc
+                            └── App
+                                └── AppTest.java
 
-11 directories, 4 files
+15 directories, 3 files
 ```
 # 3. El fitxer pom.xml
 
