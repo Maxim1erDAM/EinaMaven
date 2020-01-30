@@ -125,6 +125,7 @@ Veiem els diferents paràmetres que hem proporcionat a Maven:
 
 Amb tot açò, l'eixida de l'ordre anterior (i després de descarregar algun programari addicional...) és la següent:
 
+```
 $ mvn archetype:generate -DgroupId=com.ieseljust.edd -DartifactId=myHelloMVN -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ...
 [INFO] Scanning for projects...
@@ -162,10 +163,13 @@ Downloading...
 [INFO] ------------------------------------------------------------------------
 ...
 
+```
+
 Com podem apreciar, ens mostra algunes alertes i missatges informatius, amb els valors que ha establert per a alguns paràmetres. Com podem comprovar també, es realitzen diverses descàrregues des de repo.maven.apache.org. Aquesta adreça és el repositori de Maven, i conté totes les plantilles i eines que podem utilitzar amb Maven.
 
 Bé, veiem ara què ens ha generat aquesta ordre:
 
+```
 $ tree
 .
 `-- myHelloMVN
@@ -183,6 +187,7 @@ $ tree
                     `-- ieseljust
                         `-- edd
                             `-- AppTest.java
+```
 
 Com veiem, ha creat la carpeta del projecte myHelloMVN amb el fitxer pom.xml, que descriu el projecte segons el Project Ojbect Model (POM). Dins d'aquesta carpeta tenim la carpeta src, amb els fitxers font i de tests, degudament organitzats en carpetes segons el nom de domini completament qualificat.
 2.2. El fitxer pom.xml
