@@ -112,7 +112,7 @@ Podeu consultar de forma ampliada més informació sobre Maven als següents enl
 
 
    
-    Anem a crear un projecte per al vostre codi de la calculadora. Per a això, partireu de l'arquetipus quickstart de maven per defecte, i haureu de crear les dues classes necessàries per al seu funcionament. Aneu en compte amb els noms dels paquets.
+Anem a crear un projecte per al vostre codi de la calculadora. Per a això, partireu de l'arquetipus quickstart de maven per defecte, i haureu de crear les dues classes necessàries per al seu funcionament. Aneu en compte amb els noms dels paquets.
 
 Podeu utilitzar qualsevol dels mecanismes i IDEs què hem vist (eina mvn pròpia de Maven, el plugin de Maven per a VSCode, o bé Netbeans).
 
