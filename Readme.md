@@ -41,7 +41,7 @@ Aixó doncs, el principal avantatge que aporta Maven és que ens ofereix un supo
 
 Maven no vé instal·lat per defecte en Ubuntu, però està disponible als repositoris.
 
-Per tal de comprovar si tenim Maven instal·lat al nostre sistema, podem fer:
+Per tal de comprobar si tenim Maven instal·lat al nostre sistema, podem fer:
 
 ```
 $ apt-cache policy maven
