@@ -532,9 +532,6 @@ La mitja entre els números pasat com a arguments, que són: 3.0 i 4.0. El mitja
 
 # 5. Entenent el cicle de vida de construcció
 
-Disposeu informació ampliada sobre aquest punt en:
-
-    https://rubensa.wordpress.com/2016/06/10/maven-lifecycle/
 
 Un dels principals conceptes de Maven és el de cicle de vida de construcció, o build lifecycle, que defineix el procés de construcció i distribució de components.
 
@@ -542,20 +539,17 @@ Maven presenta tres cicles de vida al sistema:
 
 ```
     default, que controla el desplegament del projecte,
+    
     clean, que controla la neteja del projecte,
+    
     site, que controla la generació de la documentació del projecte.
 ```
 
-Cadascun d'aquests cicles es compon de diferents fases, que representen diferents estats del cicle de vida. Veiem a la figura \ref{maven_lifecycle_table} la relació entre els cicles de vida i les seues respectives fases.
-
-Cicles de vida Maven\label{maven_lifecycle_table}
+Cadascun d'aquests cicles es compon de diferents fases, que representen diferents estats del cicle de vida. 
 
 Les diferents fases del cicle de vida s'executen de forma seqüencial per tal de completar aquest, però també es poden invocar de forma individual. Aquesta invocació individual d'una fase, implica la invocació de totes les fases anteriors. Per exemple, anteriorment, hem vit que per construir l'aplicació d'hola món hem fet mvn package, amb el que invocàvem la fase package del cicle de vida default. Aquesta fase, implica doncs totes les anteriors, de validació, inicialització, processat, compilació, generació i compilació de tests, fins arribar a la fase package.
-Fases del cicle de construcció i plugins
 
-Tot i que cada fase és responsable d'una part del cicle de vida de construcció, la forma de portar-la a terme pot variar entre projectes. Açò s'aconsegueix mitjançant la declaració d'objectius (goals) de plugins associats a cada fase de construcció al fitxer pom.xml. Un objectiu d'un plugin representa una tasca específica en la construcció i gestió d'un projecte, i pot estar associat a zero o més fases de construcció. Si no està associat a cap fase, aquest objectiu pot executar-se fora del cicle de vida, invocant-lo directament.
-
-Disposeu de molta més informació al respecte a la bibliografía, però de moment, amb el que hem vist, ja podeu tindre una idea general del cicle de construcció i de la forma de treballar amb Maven.
+Fases del cicle de construcció i plugins:tot i que cada fase és responsable d'una part del cicle de vida de construcció, la forma de portar-la a terme pot variar entre projectes. Açò s'aconsegueix mitjançant la declaració d'objectius (goals) de plugins associats a cada fase de construcció al fitxer pom.xml. Un objectiu d'un plugin representa una tasca específica en la construcció i gestió d'un projecte, i pot estar associat a zero o més fases de construcció. Si no està associat a cap fase, aquest objectiu pot executar-se fora del cicle de vida, invocant-lo directament.
 
 # 6. El mode interactiu de Maven
 
