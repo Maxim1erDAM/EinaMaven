@@ -9,9 +9,9 @@
 
 >### UNITAT 4. Automatització amb Maven.
 >
->***[1.-Com instalar Git i Make en Ubuntu 18.](https://github.com/Maxim1erDAM/Unitat4#1-com-instalar-git-i-make-en-ubuntu-18)***
+>***[1.-Introducció: Apache Maven.](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#1-introducci%C3%B3-apache-maven)***
 >
->***[2. Com utilitzar Git Part 1](https://github.com/Maxim1erDAM/Unitat4#2-com-utilitzar-git-part-1)***
+>***[# 2. Primer exemple amb Maven](https://github.com/Maxim1erDAM/EinaMaven#2-primer-exemple-amb-maven)***
 >
 >***[3. Make i el fitxer Makefile](https://github.com/Maxim1erDAM/Unitat4/blob/master/Readme.md#3-make-i-el-fitxer-makefile)***
 
@@ -32,7 +32,6 @@ Maven pretén seguir diversos patrons per construir la infrastructura d'un proje
     La distribució de l'aplicació
 
 Aixó doncs, el principal avantatge que aporta Maven és que ens ofereix un suport al cicle de desenvolupament acord a estàndards i bones pràctiques per millorar-lo.
-1.1. Instal·lació de Maven en Ubuntu
 
 Maven no vé instal·lat per defecte en Ubuntu, però està disponible als repositoris.
 
