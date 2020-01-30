@@ -85,12 +85,15 @@ Com veiem, el paquet maven arrossega algunes dependències, el que ens dóna una
 
 Per tal de comprova que tenim Maven instal·lat al sistema, fem:
 
+
+```
 $ mvn --version
 Apache Maven 3.6.0
 Maven home: /usr/share/maven
 Java version: 11.0.5, vendor: Private Build, runtime: /usr/lib/jvm/java-11-openjdk-amd64
 Default locale: ca_ES, platform encoding: UTF-8
 OS name: "linux", version: "4.15.0-72-generic", arch: "amd64", family: "unix"
+```
 
 Veiem que ens ofereix informació sobre la versió i la ubicació de la instal·lació de Maven i de Java, així com informació genèrica sobre el sisema, com la configuració d'idioma i el sistema operatiu.
 
@@ -107,9 +110,12 @@ Anem a crear un projecte de tipus Hola Món des de zero, amb les ajudes que ens 
 
 Anem a començar amb la creació d'aquest primer exemple. Per a això, llançarem la següent ordre:
 
+```
 $ mvn archetype:generate -DgroupId=com.ieseljust.edd -DartifactId=myHelloMVN -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+```
 
 Veiem els diferents paràmetres que hem proporcionat a Maven:
+
 
     archetype:generate: Indiquem a maven que volem executar l'objectiu (goal) generate del plugin archetype. Recordem que en Maven, els goals són equiparables als tasks d'Ant. Aquest objectiu en concret, ens genera un projecte simple basat en un arquetipus. Podem dir que un plugin és una col·lecció d'objectius amb un propòsit comú.
     DgroupId: Indiquem l'identificador únic de l'organitzció que crea el projecte, basat normalment en el domini completament qualificat de l'organització (fully qualified domain), en aquest cas com.ieseljust.edd.
