@@ -657,6 +657,31 @@ WARNING: All illegal access operations will be denied in a future release
 [INFO] Finished at: 2020-01-30T14:58:21+01:00
 [INFO] ------------------------------------------------------------------------
 ```
+
+Com queda al construir finalment el directori:
+```
+myHelloMVN
+├── pom.xml
+└── src
+    ├── main
+    │   └── java
+    │       └── com
+    │           └── ieseljust
+    │               └── edd
+    │                   └── calc
+    │                       └── App
+    │                           └── App.java
+    └── test
+        └── java
+            └── com
+                └── ieseljust
+                    └── edd
+                        └── calc
+                            └── App
+                                └── AppTest.java
+
+15 directories, 3 files
+```
     Suport per a la generació de projectes a partir d'arquetipus Maven,
     Suport per generar POM de forma eficient,
     Oferix dreceres de teclat per llençar objectius de Maven comuns: clean, validate, compile test, package, verify, install, site i deploy,
