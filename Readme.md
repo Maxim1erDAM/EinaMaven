@@ -567,7 +567,7 @@ Per crear un projecte Maven des del mode interactiu, només cal indicar que vole
 $ mvn archetype:generate
 ```
 
-Després d'alguns possibles avisos i missatges informatius, ens ofereix una llista de totes les plantilles disponibles a Maven (més de 2000). Per defecte, ens proposa la creació d'un projecte de tipus 'maven-archetype-quickstart' (1466), que és el clàssic Hola Món que coneixem de l'exemple anterior. Tingueu en compte que aquet número pot variar entre les diferents versions de Maven.
+Després d'alguns possibles avisos i missatges informatius, ens ofereix una llista de totes les plantilles disponibles a Maven (més de 2000). Per defecte, ens proposa la creació d'un projecte de tipus 'maven-archetype-quickstart' (1466), que és el clàssic Hola Món que coneixem de l'exemple anterior. Tingueu en compte que aquet número POT VARIAR entre les diferents versions de Maven.
 
 ```
 Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): 1466: 
@@ -616,8 +616,47 @@ package: com.ieseljust.edd.calc.App
 
 ```
 
-Amb açò, tindrem una estructura de projecte idèntica a la del projecte anterior i un fitxer pom.xml equivalent. Per tal de compilar-lo, haurem de fer les modificacions corresponents al fitxer pom.xml per tal d'evitar els errors amb les versions 1.5 de java, i llençar el mvn compile per compilar o el mvn package per obtindre el paquet.
+Amb açò, tindrem una estructura de projecte idèntica a la del projecte anterior i un fitxer pom.xml equivalent. Per tal de compilar-lo, haurem de fer les modificacions corresponents al fitxer pom.xml per tal d'evitar els errors amb les versions 1.5 de java, i llençar el mvn compile per compilar o el mvn package per obtindre el paquet i que no falle cap dependència.
 
+Yo l'he construit amb la comanda:
+```
+alumne@alumne-VirtualBox:~/Escritorio/einaMaven/projecte$ mvn archetype:generate -DgroupId=com.ieseljust.edd.calc.App -DartifactId=myHelloMVN -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< org.apache.maven:standalone-pom >-------------------
+[INFO] Building Maven Stub Project (No POM) 1
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] >>> maven-archetype-plugin:3.1.2:generate (default-cli) > generate-sources @ standalone-pom >>>
+[INFO] 
+[INFO] <<< maven-archetype-plugin:3.1.2:generate (default-cli) < generate-sources @ standalone-pom <<<
+[INFO] 
+[INFO] 
+[INFO] --- maven-archetype-plugin:3.1.2:generate (default-cli) @ standalone-pom ---
+[INFO] Generating project in Batch mode
+[INFO] ----------------------------------------------------------------------------
+[INFO] Using following parameters for creating project from Old (1.x) Archetype: maven-archetype-quickstart:1.0
+[INFO] ----------------------------------------------------------------------------
+[INFO] Parameter: basedir, Value: /home/alumne/Escritorio/einaMaven/projecte
+[INFO] Parameter: package, Value: com.ieseljust.edd.calc.App
+[INFO] Parameter: groupId, Value: com.ieseljust.edd.calc.App
+[INFO] Parameter: artifactId, Value: myHelloMVN
+[INFO] Parameter: packageName, Value: com.ieseljust.edd.calc.App
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] project created from Old (1.x) Archetype in dir: /home/alumne/Escritorio/einaMaven/projecte/myHelloMVN
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.049 s
+[INFO] Finished at: 2020-01-30T14:58:21+01:00
+[INFO] ------------------------------------------------------------------------
+```
     Suport per a la generació de projectes a partir d'arquetipus Maven,
     Suport per generar POM de forma eficient,
     Oferix dreceres de teclat per llençar objectius de Maven comuns: clean, validate, compile test, package, verify, install, site i deploy,
