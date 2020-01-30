@@ -20,7 +20,7 @@
 
 # 1. Introducció: Apache Maven
 
->*** Maven és una altra eina que ens servex també per a la construcció d'aplicacions Java i la gestió de les seues dependències, a l'igual que ant, però presenta un punt de partida diferent.´***
+>***Maven és una altra eina que ens servex també per a la construcció d'aplicacions Java i la gestió de les seues dependències, a l'igual que ant, però presenta un punt de partida diferent.***
 
 Maven pretén seguir diversos patrons per construir la infrastructura d'un projecte Java, per tal d'homogeneïtzar l'estructura de les aplicacions i bones pràctiques, millorant així la productivitat. Bàsicament es tracta d'una eina de gestió de projectes que proveeix una forma d'ajudar en diverses tasques, tals com:
 
