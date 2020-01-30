@@ -365,6 +365,14 @@ target
 Per tal d'executar l'aplicació, hem d'indicar el classpath (opció -cp) i llençar l'aplicació, reemplaçant les barres del camí des del classpath fins la classe per punts (com/ieseljust/app/App -> com/ieseljust/app/App).
 
 ```
+alumne@alumne-VirtualBox:~/Escritorio/einaMaven/projecte/myHelloMVN/target/classes$ java com.ieseljust.edd.calc.App 4 3
+La suma entre 4.0 i 3.0 és 7.0
+La resta entre 4.0 i 3.0 és 1.0
+La multiplicació entre 4.0 i 3.0 és 12.0
+La divisió entre 4.0 i 3.0 és 1.3333334
+El número major entre els números pasat com a arguments, que són: 4.0 i 3.0. El major es el número:4.0
+La mitja entre els números pasat com a arguments, que són: 4.0 i 3.0. El mitja es el número:3.5
+Última operació realitzada: Mitja; Últim resultat: 3.5
 
 ```
 
@@ -394,13 +402,57 @@ Veiem-ne el resultat de l'empaquetat:
 ```
 $ mvn package
 ...
-[INFO] Building jar: .../exemples_java/mvn1/myHelloMVN/target/myHelloMVN-1.0-SNAPSHOT.jar
+alumne@alumne-VirtualBox:~/Escritorio/einaMaven/projecte/myHelloMVN$ mvn package
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.ieseljust.edd.calc:myHelloMVN >------------------
+[INFO] Building myHelloMVN 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ myHelloMVN ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/alumne/Escritorio/einaMaven/projecte/myHelloMVN/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ myHelloMVN ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ myHelloMVN ---
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory /home/alumne/Escritorio/einaMaven/projecte/myHelloMVN/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ myHelloMVN ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[INFO] Compiling 1 source file to /home/alumne/Escritorio/einaMaven/projecte/myHelloMVN/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ myHelloMVN ---
+[INFO] Surefire report directory: /home/alumne/Escritorio/einaMaven/projecte/myHelloMVN/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.ieseljust.edd.AppTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+
+Results :
+
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ myHelloMVN ---
+[INFO] Building jar: /home/alumne/Escritorio/einaMaven/projecte/myHelloMVN/target/myHelloMVN-1.0-SNAPSHOT.jar
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  8.220 s
-[INFO] Finished at: 2020-01-02T09:32:27+01:00
+[INFO] Total time:  3.212 s
+[INFO] Finished at: 2020-01-30T14:14:06+01:00
 [INFO] ------------------------------------------------------------------------
+
 
 ```
 
@@ -408,46 +460,56 @@ Amb açò s'ha realitzat la compilació i els tests corresponents, generant tota
 
 ```
 target
-|-- classes
-|   `-- com
-|       `-- ieseljust
-|           `-- edd
-|               `-- App.class
-|-- generated-sources
-|   `-- annotations
-|-- generated-test-sources
-|   `-- test-annotations
-|-- maven-archiver
-|   `-- pom.properties
-|-- maven-status
-|   `-- maven-compiler-plugin
-|       |-- compile
-|       |   `-- default-compile
-|       |       |-- createdFiles.lst
-|       |       `-- inputFiles.lst
-|       `-- testCompile
-|           `-- default-testCompile
-|               |-- createdFiles.lst
-|               `-- inputFiles.lst
-|-- myHelloMVN-1.0-SNAPSHOT.jar
-|-- surefire-reports
-|   |-- com.ieseljust.edd.AppTest.txt
-|   `-- TEST-com.ieseljust.edd.AppTest.xml
-`-- test-classes
-    `-- com
-        `-- ieseljust
-            `-- edd
-                `-- AppTest.class
+├── classes
+│   └── com
+│       └── ieseljust
+│           └── edd
+│               └── calc
+│                   ├── App.class
+│                   └── Calculadora.class
+├── generated-sources
+│   └── annotations
+├── generated-test-sources
+│   └── test-annotations
+├── maven-archiver
+│   └── pom.properties
+├── maven-status
+│   └── maven-compiler-plugin
+│       ├── compile
+│       │   └── default-compile
+│       │       ├── createdFiles.lst
+│       │       └── inputFiles.lst
+│       └── testCompile
+│           └── default-testCompile
+│               ├── createdFiles.lst
+│               └── inputFiles.lst
+├── myHelloMVN-1.0-SNAPSHOT.jar
+├── surefire-reports
+│   ├── com.ieseljust.edd.AppTest.txt
+│   └── TEST-com.ieseljust.edd.AppTest.xml
+└── test-classes
+    └── com
+        └── ieseljust
+            └── edd
+                └── AppTest.class
 
-20 directories, 10 files
+21 directories, 11 files
+
 
 ```
 
 Si ens fixem, dins la carpeta target es troba el fitxer myHelloMVN-1.0-SNAPSHOT.jar, amb l'aplicació empaquetada. Per tal d'executar l'aplicació des del jar, establirem aquest com al classpath i llançarem l'aplicació:
 
 ```
-$ java -cp target/myHelloMVN-1.0-SNAPSHOT.jar com.ieseljust.edd.App
-Hello World!
+alumne@alumne-VirtualBox:~/Escritorio/einaMaven/projecte/myHelloMVN$ java -cp target/myHelloMVN-1.0-SNAPSHOT.jar com.ieseljust.edd.calc.App 3 4
+La suma entre 3.0 i 4.0 és 7.0
+La resta entre 3.0 i 4.0 és -1.0
+La multiplicació entre 3.0 i 4.0 és 12.0
+La divisió entre 3.0 i 4.0 és 0.75
+El número major entre els números pasat com a arguments, que són: 3.0 i 4.0. El major es el número:4.0
+La mitja entre els números pasat com a arguments, que són: 3.0 i 4.0. El mitja es el número:3.5
+Última operació realitzada: Mitja; Últim resultat: 3.5
+
 ```
 
 # 5. Entenent el cicle de vida de construcció
