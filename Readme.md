@@ -19,7 +19,7 @@
 >
 >***[5.-Entenent el cicle de vida de construcció](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#5-entenent-el-cicle-de-vida-de-construcci%C3%B3)***
 >
->***[6.-Entenent el cicle de vida de construcció](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#5-entenent-el-cicle-de-vida-de-construcci%C3%B3)***
+>***[6.-El mode interactiu de Maven](https://github.com/Maxim1erDAM/EinaMaven/blob/master/Readme.md#5-entenent-el-cicle-de-vida-de-construcci%C3%B3)***
 
 #    **-Activitat pràctica-**
 
