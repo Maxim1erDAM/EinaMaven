@@ -119,8 +119,6 @@ Podeu utilitzar qualsevol dels mecanismes i IDEs què hem vist (eina mvn pròpia
 
 Un arquetipus no és més que un patró o model a partir del qual creem l'esquelet del nostre projecte.
 
-#2.1. Generació del projecte a partir de l'arquetipus
-
 Anem a començar amb la creació d'aquest primer exemple. Per a això, llançarem la següent ordre:
 
 ```
