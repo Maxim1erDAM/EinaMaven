@@ -684,9 +684,4 @@ myHelloMVN
 
 15 directories, 3 files
 ```
-    Suport per a la generació de projectes a partir d'arquetipus Maven,
-    Suport per generar POM de forma eficient,
-    Oferix dreceres de teclat per llençar objectius de Maven comuns: clean, validate, compile test, package, verify, install, site i deploy,
-    Manteniment d'un historial d'ordres per tornar a llançar ordres recents.
-
-
+  
