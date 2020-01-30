@@ -491,58 +491,6 @@ Com ja sabem, quan instal·lem el Java Extension Pack, una de les extensions que
     Oferix dreceres de teclat per llençar objectius de Maven comuns: clean, validate, compile test, package, verify, install, site i deploy,
     Manteniment d'un historial d'ordres per tornar a llançar ordres recents.
 
-3.1. L'explorador de projectes Maven
-
-Quan obrim una carpeta o espai de treball que conté un fitxer pom.xml, VSCode ens mostra una nova secció a la barra lateral anomenada Maven Projects, amb els projectes Maven de l'espai i els seus mòduls.
-
-Explorador de Projectes Maven\label{vsc_maven1}
-
-Com veiem a la figura \ref{vsc_maven1}, després d'obrir la carpeta on tenim el projecte d'Hola Món, tenim el projecte myHelloMVN a la pestanya de Maven Projects. Si fem clic en el nom del projecte, veurem que ens obre el fitxer pom.xml que descriu aquest, i per altra banda, si fem clic al botó dret, veurem les diferents possibilitats que tenim per al projecte. Com podem veure, tenim diferents objectius a llençar: clean, package, install, compile, etc. A més, tenim accés a l'historial (per no tornar a escriure ordres llargues que ja hem utilitzat) i una opció anomenada Effective POM.
-Què és l'Efective POM
-
-Quan creem un projecte Maven a partir d'un arquetipus, definim per a aquest un conjunt de propietats tals com el groupID, l'artifactID i la versió. Aquests tres camps són els que es requereixen per a tot projecte, i són el que conformaría el POM més simple que podríem generar. El POM d'un projecte, a més, hereta certes propietats del que es coneix com el Super POM, que vindría a ser com la classe pare de la que hereten tots els POM. És a dir, un POM es compon dels atributs que hi definim explícitament en funció de l'arquetipus que hajam utilitzat, i a més, posseeix un conjunt de valors per defecte compartits per tots els projectes, i que no apareixen explícitament al fitxer pom.xml.
-
-Tenint tot açò en compte, el POM Efectiu (Effective POM) s'entén com la combinació d'ambdós POM, el Super POM i el POM més simple. A efectes pràctics, si generem el POM efectiu del nostre projecte (el genera en una pestanya a banda, sense modificar el nostre pom.xml), veurem que es tracta d'un fitxer XML bastant més extés que l'original, i en el que tindrem totes les característiques que teníem definides explícitament més totes aquelles que hi havía implícitament i que són comunes a tots els projectes.
-
-Teniu més informació sobre l'effective POM en:
-
-    https://books.sonatype.com/mvnref-book/reference/pom-relationships-sect-pom.html
-
-3.2. Generació d'un projecte Maven des de VSCode
-
-Visual Studio ens permet crear projectes Maven a partir d'arquetipus de diferents dipòsits. Simplement, el que fa és llençar per nosaltres les ordres que hem vist anteriorment a la terminal de VSCode.
-
-Veiem com fer-ho. Partint d'una finestra neta del VSCode (File > New Window):
-
-    Busquem la pestanya desplegable "Maven Projects", i el símbol "+" que apareix a la seua dreta.
-    Fem clic en aquest símbol "+" per crear un projecte Maven nou.
-    A la paleta d'ordres ens apareixerant els diferents arquetipus de què disposem. Busquem quickstart, i seleccionem maven-archetype-quickstart.
-    Fet açò se'ns obrirà la terminal integrada de VSCode, i veurem com va generant-se el projecte tal i féiem per consola. En un moment donat ens demanarà la informació necessària per al nostre projecte, de la mateixa manera que es fa al mode interactiu.
-
-Una vegada indicats els paràmetres, se'ns generarà el projecte. Si donem un cop d'ull a l'estructura de carpetes generada i al pom.xml, veurem que és el mateix que havíem definit per consola.
-
-Actualització de la caché d'arquetipus
-
-Una altra opció que podem realitzar amb el VSCode, és actualitzar la caché local dels diferents arquetipus des del magatzem central de Maven. Per a això, accedirem a la Consola d'Ordres amb Ctrl+Shift+P. Quan se'ns òbriga aquesta, començarem a escriure Maven:... i ja tindrem a la vista l'opció d'Update Maven Archetype Catalog.
-4. Maven en Netbeans
-
-Com a últim apartat d'aquest punt, anem a veure com gestionar projectes Maven des de l'IDE Netbeans.
-
-Per tal de crear un nou projecte amb Maven, ho farem de la mateixa forma que amb Ant: File -> New Project, però ara escollint un projecte de tipus Project from Archetype de la categoría Java with Maven:
-
-Creació d'un projecte Maven en Netbeans
-
-En la següent finestra haurem d'indicar l'arquetipus. Veurem que tarda una miqueta a descarregar-se tots els arquetipus possibles. Al quadre de cerca de dalt, podem començar a escriure l'arquetipus per filtrar els resultats. Recordeu que volem un projecte a partir de l'arquetipus maven-archetype-quickstart:
-
-Selecció de l'arquetipus
-
-Una vegada escollit l'arquetipus, triem el nom del projecte (HelloMaven), la carpeta de destí, i el nom de l'organització (GroupID: com.ieseljust.edd), així com la versió, i el nom del paquet (com.ieseljust.edd.helloMaven):
-
-Selecció de l'arquetipus
-
-Fet açò, veurem que ens genera la classe App dins el paquet que hem indicat amb el codi de l'Hola Món, i com dins el projecte es troba també, en la carpeta Project Files el fitxer pom.xml
-
-Projecte HelloMaven
 
     TO-DO
 
