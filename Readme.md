@@ -288,48 +288,56 @@ Una vegada tenim l'esquelet de l'aplicació generat, ja podem realitzar la seua 
 Per tal de fer la compilació, des de la carpeta arrel del projecte (la que conté el pom.xml), llancem la següent ordre:
 
 ```
-$ mvn compile
-...
+alumne@alumne-VirtualBox:~/Escritorio/einaMaven/projecte/myHelloMVN$ mvn compile
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
 [INFO] Scanning for projects...
 [INFO] 
-[INFO] --------------------< com.ieseljust.edd:myHelloMVN >--------------------
+[INFO] -----------------< com.ieseljust.edd.calc:myHelloMVN >------------------
 [INFO] Building myHelloMVN 1.0-SNAPSHOT
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ myHelloMVN ---
 [WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /home/joamuran/Dropbox/Docencia/curs_19-20/EDD/Unitats/UD4. Automatitzacio/exemples_java/mvn1/myHelloMVN/src/main/resources
+[INFO] skip non existing resourceDirectory /home/alumne/Escritorio/einaMaven/projecte/myHelloMVN/src/main/resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ myHelloMVN ---
 [INFO] Changes detected - recompiling the module!
 [WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
-[INFO] Compiling 1 source file to /home/joamuran/Dropbox/Docencia/curs_19-20/EDD/Unitats/UD4. Automatitzacio/exemples_java/mvn1/myHelloMVN/target/classes
+[INFO] Compiling 2 source files to /home/alumne/Escritorio/einaMaven/projecte/myHelloMVN/target/classes
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  1.643 s
-[INFO] Finished at: 2020-01-02T09:27:04+01:00
+[INFO] Total time:  2.422 s
+[INFO] Finished at: 2020-01-30T13:25:06+01:00
 [INFO] ------------------------------------------------------------------------
 ```
 
 Amb açò s'haurà generat una nova carpeta target a l'arrel del projecte, amb les classes generades, amb la següent estructura:
 
 ```
-$ tree target
 target
-|-- classes
-|   `-- com
-|       `-- ieseljust
-|           `-- edd
-|               `-- App.class
-|-- generated-sources
-|   `-- annotations
-`-- maven-status
-    `-- maven-compiler-plugin
-        `-- compile
-            `-- default-compile
-                |-- createdFiles.lst
-                `-- inputFiles.lst
+├── classes
+│   └── com
+│       └── ieseljust
+│           └── edd
+│               └── calc
+│                   ├── App.class
+│                   └── Calculadora.class
+├── generated-sources
+│   └── annotations
+└── maven-status
+    └── maven-compiler-plugin
+        └── compile
+            └── default-compile
+                ├── createdFiles.lst
+                └── inputFiles.lst
+
+11 directories, 4 files
+
 ```
 
 Per tal d'executar l'aplicació, hem d'indicar el classpath (opció -cp) i llençar l'aplicació, reemplaçant les barres del camí des del classpath fins la classe per punts (com/ieseljust/app/App -> com/ieseljust/app/App).
