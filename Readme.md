@@ -181,23 +181,31 @@ Com podem apreciar, ens mostra algunes alertes i missatges informatius, amb els 
 Bé, veiem ara què ens ha generat aquesta ordre:
 
 ```
-$ tree
+alumne@alumne-VirtualBox:~/Escritorio/provaeinaMaven$ tree
 .
-`-- myHelloMVN
-    |-- pom.xml
-    `-- src
-        |-- main
-        |   `-- java
-        |       `-- com
-        |           `-- ieseljust
-        |               `-- edd
-        |                   `-- App.java
-        `-- test
-            `-- java
-                `-- com
-                    `-- ieseljust
-                        `-- edd
-                            `-- AppTest.java
+├── myHelloMVN
+│   ├── pom.xml
+│   └── src
+│       ├── main
+│       │   └── java
+│       │       └── com
+│       │           └── ieseljust
+│       │               └── edd
+│       │                   └── App.java
+│       └── test
+│           └── java
+│               └── com
+│                   └── ieseljust
+│                       └── edd
+│                           └── AppTest.java
+└── src
+    └── com
+        └── ieseljust
+            └── edd
+                └── App.java
+
+16 directories, 4 files
+
 ```
 
 Com veiem, ha creat la carpeta del projecte myHelloMVN amb el fitxer pom.xml, que descriu el projecte segons el Project Ojbect Model (POM). Dins d'aquesta carpeta tenim la carpeta src, amb els fitxers font i de tests, degudament organitzats en carpetes segons el nom de domini completament qualificat.
