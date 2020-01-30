@@ -38,6 +38,7 @@ Maven no vé instal·lat per defecte en Ubuntu, però està disponible als repos
 
 Per tal de comprovar si tenim Maven instal·lat al nostre sistema, podem fer:
 
+```
 $ apt-cache policy maven
 maven:
   Instal·lat: (cap)
@@ -51,6 +52,7 @@ maven:
      3.5.2-2 500
         500 http://es.archive.ubuntu.com/ubuntu bionic/universe amd64 Packages
         500 http://es.archive.ubuntu.com/ubuntu bionic/universe i386 Packages
+```
 
 Com veiem ens indica que no tenim el paquet instal·lat, però que podem instal·lar la versió 3.6.0-1~18.04.1 des dels repositoris d'Ubuntu.
 
