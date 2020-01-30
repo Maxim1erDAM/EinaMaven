@@ -103,7 +103,7 @@ Podeu consultar de forma ampliada més informació sobre Maven als següents enl
     https://maven.apache.org/guides/getting-started/index.html
     https://www.baeldung.com/maven
 
-2. Primer exemple amb Maven
+# 2. Primer exemple amb Maven
 
 Anem a crear un projecte de tipus Hola Món des de zero, amb les ajudes que ens proveeix Maven. Per a això farem ús del mecanisme d'arquetipus que ofereix. Un arquetipus no és més que un patró o model a partir del qual creem l'esquelet del nostre projecte.
 2.1. Generació del projecte a partir de l'arquetipus
