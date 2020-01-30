@@ -331,6 +331,7 @@ El fitxer "pom.xml" quedaría de la seguent manera:
 # 4. Compilació, neteja i construcció del projecte
 
 Una vegada tenim l'esquelet de l'aplicació generat, ja podem realitzar la seua compilació i construcció.
+Els objectius o targets que podem executar amb mvn(maven) són: clean, validate, compile test, package, verify, install, site i deploy.
 
 Per tal de fer la compilació, des de la carpeta arrel del projecte (la que conté el pom.xml), llancem la següent ordre:
 
