@@ -212,11 +212,14 @@ Realitzant alguns ajustos al fitxer
 
 Les últimes versions de Maven no suporten ja la compilació per a Java 1.5, pel que si no indiquem el contrari, obtindrem un missatge de compilació del tipus:
 
+```
 [ERROR] Source option 1.5 is no longer supported. Use 1.6 or later.
 [ERROR] Target option 1.5 is no longer supported. Use 1.6 or later.
+```
 
 Per tal d'evitar açò, cal especificar un parell de propietats per al projecte. Concretament el source i el target del compilador de Maven. Per a això, editem el fitxem pom.xml i afegim la següent etiqueta <properties>, abans d'especificar l'etiqueta de dependències:
 
+```
  [...]
  <url>http://maven.apache.org</url>
 
@@ -227,11 +230,13 @@ Per tal d'evitar açò, cal especificar un parell de propietats per al projecte.
 
   <dependencies>
   [...]
+```
 
 2.3. Hola Món!
 
 L'arquetipus que hem utilitzat per generar l'aplicació, maven-archetype-quickstart, ens crea directament un esquelet d'aplicació del tipus Hola Món, directament. Si accedim al fitxer src/main/java/com/ieseljust/app/App.java, veurem un codi bastant familiar:
 
+```
 package com.ieseljust.edd;
 
 /**
@@ -245,6 +250,7 @@ public class App
         System.out.println( "Hello World!" );
     }
 }
+```
 
 2.4. Compilació, neteja i construcció del projecte
 
@@ -252,6 +258,7 @@ Una vegada tenim l'esquelet de l'aplicació generat, ja podem realitzar la seua 
 
 Per tal de fer la compilació, des de la carpeta arrel del projecte (la que conté el pom.xml), llancem la següent ordre:
 
+```
 $ mvn compile
 ...
 [INFO] Scanning for projects...
@@ -274,9 +281,11 @@ $ mvn compile
 [INFO] Total time:  1.643 s
 [INFO] Finished at: 2020-01-02T09:27:04+01:00
 [INFO] ------------------------------------------------------------------------
+```
 
 Amb açò s'haurà generat una nova carpeta target a l'arrel del projecte, amb les classes generades, amb la següent estructura:
 
+```
 $ tree target
 target
 |-- classes
@@ -292,29 +301,39 @@ target
             `-- default-compile
                 |-- createdFiles.lst
                 `-- inputFiles.lst
+```
 
 Per tal d'executar l'aplicació, hem d'indicar el classpath (opció -cp) i llençar l'aplicació, reemplaçant les barres del camí des del classpath fins la classe per punts (com/ieseljust/app/App -> com/ieseljust/app/App).
 
+```
 $ java -cp target/classes com.ieseljust.edd.App 
 Hello World!
+```
 
 Per altra banda, si el que volem és netejar el projecte, farem:
 
+```
 mvn clean
 ...
+```
 
 Que com veurem, ens haurà esborrat la carpeta target anterior.
 
 Finalment, per fer la construcció i empaquetat en jar del projecte, farem:
 
+```
 $ mvn package
+```
 
 O si bé volem fer la neteja i la construcció tot d'una, podem fer:
 
+```
 $ mvn clean package
+```
 
 Veiem-ne el resultat de l'empaquetat:
 
+```
 $ mvn package
 ...
 [INFO] Building jar: .../exemples_java/mvn1/myHelloMVN/target/myHelloMVN-1.0-SNAPSHOT.jar
@@ -325,8 +344,11 @@ $ mvn package
 [INFO] Finished at: 2020-01-02T09:32:27+01:00
 [INFO] ------------------------------------------------------------------------
 
+```
+
 Amb açò s'ha realitzat la compilació i els tests corresponents, generant tota l'estrucura de directoris següent:
 
+```
 target
 |-- classes
 |   `-- com
@@ -361,10 +383,14 @@ target
 
 20 directories, 10 files
 
+```
+
 Si ens fixem, dins la carpeta target es troba el fitxer myHelloMVN-1.0-SNAPSHOT.jar, amb l'aplicació empaquetada. Per tal d'executar l'aplicació des del jar, establirem aquest com al classpath i llançarem l'aplicació:
 
+```
 $ java -cp target/myHelloMVN-1.0-SNAPSHOT.jar com.ieseljust.edd.App
 Hello World!
+```
 
 2.5. Entenent el cicle de vida de construcció
 
@@ -376,9 +402,11 @@ Un dels principals conceptes de Maven és el de cicle de vida de construcció, o
 
 Maven presenta tres cicles de vida al sistema:
 
+```
     default, que controla el desplegament del projecte,
     clean, que controla la neteja del projecte,
     site, que controla la generació de la documentació del projecte.
+```
 
 Cadascun d'aquests cicles es compon de diferents fases, que representen diferents estats del cicle de vida. Veiem a la figura \ref{maven_lifecycle_table} la relació entre els cicles de vida i les seues respectives fases.
 
@@ -396,14 +424,20 @@ A l'apartat anterior hem vist com crear un projecte Maven amb el mode batch. Mav
 
 Per crear un projecte Maven des del mode interactiu, només cal indicar que volem executar l'objectiu generate del plugin archetype, com hem fet abans, però sense cap paràmetre més.
 
+```
 $ mvn archetype:generate
+```
 
 Després d'alguns possibles avisos i missatges informatius, ens ofereix una llista de totes les plantilles disponibles a Maven (més de 2000). Per defecte, ens proposa la creació d'un projecte de tipus 'maven-archetype-quickstart' (1466), que és el clàssic Hola Món que coneixem de l'exemple anterior. Tingueu en compte que aquet número pot variar entre les diferents versions de Maven.
 
+```
 Choose a number or apply filter (format: [groupId:]artifactId, case sensitive contains): 1466: 
+```
+
 
 Després ens preguntarà el número de versió de l'aplicació:
 
+```
 Choose org.apache.maven.archetypes:maven-archetype-quickstart version: 
 1: 1.0-alpha-1
 2: 1.0-alpha-2
@@ -413,9 +447,11 @@ Choose org.apache.maven.archetypes:maven-archetype-quickstart version:
 6: 1.1
 7: 1.3
 Choose a number: 7: 5
+```
 
 I algunes dades més que ja coneixem:
 
+```
 Define value for property 'groupId': ieseljust
 Define value for property 'artifactId': holaMon
 Define value for property 'version' 1.0-SNAPSHOT: : 
@@ -442,6 +478,8 @@ package: com.ieseljust.edd
 [INFO] Total time:  02:12 min
 [INFO] Finished at: 2020-01-02T09:46:04+01:00
 [INFO] ------------------------------------------------------------------------
+
+```
 
 Amb açò, tindrem una estructura de projecte idèntica a la del projecte anterior i un fitxer pom.xml equivalent. Per tal de compilar-lo, haurem de fer les modificacions corresponents al fitxer pom.xml per tal d'evitar els errors amb les versions 1.5 de java, i llençar el mvn compile per compilar o el mvn package per obtindre el paquet.
 3. El plugin Maven for Java per a VSCode
