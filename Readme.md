@@ -122,7 +122,7 @@ Un arquetipus no és més que un patró o model a partir del qual creem l'esquel
 Anem a començar amb la creació d'aquest primer exemple. Per a això, llançarem la següent ordre:
 
 ```
-$ mvn archetype:generate -DgroupId=com.ieseljust.edd -DartifactId=myHelloMVN -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+$ mvn archetype:generate -DgroupId=com.ieseljust.edd.calc -DartifactId=myHelloMVN -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ```
 
 Veiem els diferents paràmetres que hem proporcionat a Maven:
@@ -136,8 +136,8 @@ Veiem els diferents paràmetres que hem proporcionat a Maven:
 
 Amb tot açò, l'eixida de l'ordre anterior (i després de descarregar algun programari addicional...) és la següent:
 
-```
-alumne@alumne-VirtualBox:~/Escritorio/provaeinaMaven$ mvn archetype:generate -DgroupId=com.ieseljust.edd -DartifactId=myHelloMVN -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+```alumne@alumne-VirtualBox:~/Escritorio/einamaven/projecte/myHelloMVN$ mvn archetype:generate -DgroupId=com.ieseljust.edd.calc -DartifactId=myHelloMVN -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
 WARNING: An illegal reflective access operation has occurred
 WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
 WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
@@ -159,18 +159,18 @@ WARNING: All illegal access operations will be denied in a future release
 [INFO] ----------------------------------------------------------------------------
 [INFO] Using following parameters for creating project from Old (1.x) Archetype: maven-archetype-quickstart:1.0
 [INFO] ----------------------------------------------------------------------------
-[INFO] Parameter: basedir, Value: /home/alumne/Escritorio/provaeinaMaven
-[INFO] Parameter: package, Value: com.ieseljust.edd
-[INFO] Parameter: groupId, Value: com.ieseljust.edd
+[INFO] Parameter: basedir, Value: /home/alumne/Escritorio/einamaven/projecte/myHelloMVN
+[INFO] Parameter: package, Value: com.ieseljust.edd.calc
+[INFO] Parameter: groupId, Value: com.ieseljust.edd.calc
 [INFO] Parameter: artifactId, Value: myHelloMVN
-[INFO] Parameter: packageName, Value: com.ieseljust.edd
+[INFO] Parameter: packageName, Value: com.ieseljust.edd.calc
 [INFO] Parameter: version, Value: 1.0-SNAPSHOT
-[INFO] project created from Old (1.x) Archetype in dir: /home/alumne/Escritorio/provaeinaMaven/myHelloMVN
+[INFO] project created from Old (1.x) Archetype in dir: /home/alumne/Escritorio/einamaven/projecte/myHelloMVN/myHelloMVN
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  4.326 s
-[INFO] Finished at: 2020-01-30T13:20:58+01:00
+[INFO] Total time:  5.083 s
+[INFO] Finished at: 2020-02-07T00:38:42+01:00
 [INFO] ------------------------------------------------------------------------
 
 
