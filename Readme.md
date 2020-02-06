@@ -428,60 +428,12 @@ Veiem-ne el resultat de l'empaquetat:
 ```
 $ mvn package
 ...
-alumne@alumne-VirtualBox:~/Escritorio/einaMaven/projecte/myHelloMVN$ mvn package
-WARNING: An illegal reflective access operation has occurred
-WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
-WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
-WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
-WARNING: All illegal access operations will be denied in a future release
-[INFO] Scanning for projects...
-[INFO] 
-[INFO] -----------------< com.ieseljust.edd.calc:myHelloMVN >------------------
-[INFO] Building myHelloMVN 1.0-SNAPSHOT
-[INFO] --------------------------------[ jar ]---------------------------------
-[INFO] 
-[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ myHelloMVN ---
-[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /home/alumne/Escritorio/einaMaven/projecte/myHelloMVN/src/main/resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ myHelloMVN ---
-[INFO] Nothing to compile - all classes are up to date
-[INFO] 
-[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ myHelloMVN ---
-[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
-[INFO] skip non existing resourceDirectory /home/alumne/Escritorio/einaMaven/projecte/myHelloMVN/src/test/resources
-[INFO] 
-[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ myHelloMVN ---
-[INFO] Changes detected - recompiling the module!
-[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
-[INFO] Compiling 1 source file to /home/alumne/Escritorio/einaMaven/projecte/myHelloMVN/target/test-classes
-[INFO] 
-[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ myHelloMVN ---
-[INFO] Surefire report directory: /home/alumne/Escritorio/einaMaven/projecte/myHelloMVN/target/surefire-reports
 
--------------------------------------------------------
- T E S T S
--------------------------------------------------------
-Running com.ieseljust.edd.AppTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
-
-Results :
-
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
-
-[INFO] 
-[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ myHelloMVN ---
-[INFO] Building jar: /home/alumne/Escritorio/einaMaven/projecte/myHelloMVN/target/myHelloMVN-1.0-SNAPSHOT.jar
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.212 s
-[INFO] Finished at: 2020-01-30T14:14:06+01:00
-[INFO] ------------------------------------------------------------------------
-
-
-```
+Captura del resultat:
 ![ImatgeMavenJarCompilacio](/Imatges/compilacio%20jar%20inicial.png)
+
+Captura 2 del resultat:
+![ImatgeMavenJarCompilacio](/Imatges/compilacio%20jar%20final.png)
 
 Amb açò s'ha realitzat la compilació i els tests corresponents, generant tota l'estrucura de directoris següent:
 
