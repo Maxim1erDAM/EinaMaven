@@ -435,8 +435,11 @@ Captura del resultat:
 Captura 2 del resultat:
 ![ImatgeMavenJarCompilacio](/Imatges/compilacio%20a%20jar%20final.png)
 
-Com executar el archiu .jar: 
-![ImatgeExecucioMavenJarCompilacio](/Imatges/execucio%20.jar%20maven.png)
+Com executar el archiu .jar, despres de la comanda "mvn package": 
+```
+$ java -cp target/myHelloMVN-1.0-SNAPSHOT.jar com.ieseljust.edd.calc.App 3 4
+
+```
 
 Amb açò s'ha realitzat la compilació del JAR, i els tests corresponents, generant tota l'estrucura del directori target següent:
 
@@ -492,6 +495,19 @@ El número major entre els números pasat com a arguments, que són: 3.0 i 4.0. 
 La mitja entre els números pasat com a arguments, que són: 3.0 i 4.0. El mitja es el número:3.5
 Última operació realitzada: Mitja; Últim resultat: 3.5
 
+```
+Al fer les funcions de Java sobre esPrim i seguentprim:
+```
+alumne@alumne-VirtualBox:~/Escritorio/einamaven/projecte/myHelloMVN$ java -cp target/classes com.ieseljust.edd.calc.App 3 4
+La suma entre 3.0 i 4.0 és 7.0
+La resta entre 3.0 i 4.0 és -1.0
+La multiplicació entre 3.0 i 4.0 és 12.0
+La divisió entre 3.0 i 4.0 és 0.75
+El número major entre els números pasat com a arguments, que són: 3.0 i 4.0. El major es el número:4.0
+La mitja entre els números pasat com a arguments, que són: 3.0 i 4.0. El mitja es el número:3.5
+El operand 1 és: 3.0. El operand1:  SI  és prim.
+El operand 1 és: 3.0. El numero primo siguiente és: 5.0 .
+Última operació realitzada: siguienteprimohasta97; Últim resultat: 5.0
 ```
 
 # 5. Entenent el cicle de vida de construcció
