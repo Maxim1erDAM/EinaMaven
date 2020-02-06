@@ -601,7 +601,7 @@ WARNING: All illegal access operations will be denied in a future release
 
 Com queda al construir finalment el directori:
 ```
-myHelloMVN
+myHelloMVN/
 ├── pom.xml
 └── src
     ├── main
@@ -610,17 +610,16 @@ myHelloMVN
     │           └── ieseljust
     │               └── edd
     │                   └── calc
-    │                       └── App
-    │                           └── App.java
+    │                       └── App.java
     └── test
         └── java
             └── com
                 └── ieseljust
                     └── edd
                         └── calc
-                            └── App
-                                └── AppTest.java
+                            └── AppTest.java
 
-15 directories, 3 files
+13 directories, 3 files
+
 ```
   
