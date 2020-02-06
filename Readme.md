@@ -180,44 +180,7 @@ Com podem apreciar, ens mostra algunes alertes i missatges informatius, amb els 
 
 Bé, veiem ara què ens ha generat aquesta ordre:
 
-```
-alumne@alumne-VirtualBox:~/Escritorio/provaeinaMaven$ tree
-.
-├── myHelloMVN
-│   ├── pom.xml
-│   └── src
-│       ├── main
-│       │   └── java
-│       │       └── com
-│       │           └── ieseljust
-│       │               └── edd
-│       │                   └── calc
-│       │                       └── App
-│       │                           └── App.java
-│       └── test
-│           └── java
-│               └── com
-│                   └── ieseljust
-│                       └── edd
-│                           └── calc
-│                               └── App
-│                                   └── AppTest.java
-└── src
-    └── com
-        └── ieseljust
-            └── edd
-                └── calc
-                    ├── App.java
-                    └── Calculadora.java
-
-
-```
-
-Com veiem, ha creat la carpeta del projecte myHelloMVN amb el fitxer pom.xml, que descriu el projecte segons el Project Ojbect Model (POM). Dins d'aquesta carpeta tenim la carpeta src, amb els fitxers font i de tests, degudament organitzats en carpetes segons el nom de domini completament qualificat, nomes mos a copiat la clase principal, nosaltres tenim que encarregarmos de copiar el "src" complet amb les seues classes o depèndencies.
-
-```
-alumne@alumne-VirtualBox:~/Escritorio/provaeinaMaven$ tree myHelloMVN/
-myHelloMVN/
+```myHelloMVN/
 ├── pom.xml
 └── src
     ├── main
@@ -226,19 +189,23 @@ myHelloMVN/
     │           └── ieseljust
     │               └── edd
     │                   └── calc
-    │                       └── App
-    │                           └── App.java
+    │                       └── App.java
     └── test
         └── java
             └── com
                 └── ieseljust
                     └── edd
                         └── calc
-                            └── App
-                                └── AppTest.java
+                            └── AppTest.java
 
-15 directories, 3 files
+13 directories, 3 files
+
+
 ```
+
+Com veiem, ha creat la carpeta del projecte myHelloMVN amb el fitxer pom.xml, que descriu el projecte segons el Project Ojbect Model (POM). Dins d'aquesta carpeta tenim la carpeta src, amb els fitxers font i de tests, degudament organitzats en carpetes segons el nom de domini completament qualificat, nomes mos a copiat la clase principal, nosaltres tenim que encarregarmos de copiar el "src" complet amb les seues classes o depèndencies.
+
+
 # 3. El fitxer pom.xml
 
 El fitxer pom.xml descriu la configuració del projecte en Maven, i proporciona la major part d'informació necessària per a la seua construcció. Pot arribar a ser un fitxer llarg i complex, però no és necessari entendre tot el seu contingut per traure tota l'efectivitat de Maven.
