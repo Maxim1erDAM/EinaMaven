@@ -481,7 +481,7 @@ Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
 
 
 ```
-![ImatgeMavenJarCompilacio](/Imatges/compilacio jar inicial.png)
+![ImatgeMavenJarCompilacio](/Imatges/compilacio%20jar%20inicial.png)
 
 Amb açò s'ha realitzat la compilació i els tests corresponents, generant tota l'estrucura de directoris següent:
 
