@@ -330,6 +330,12 @@ WARNING: All illegal access operations will be denied in a future release
 [INFO] Finished at: 2020-01-30T13:25:06+01:00
 [INFO] ------------------------------------------------------------------------
 ```
+Captura de la meua máquina virtual: 
+Captura 1 del resultat:
+![ImatgeMavenCompilacio](/Imatges/maven%20compile.png)
+Captura 2 del resultat:
+![ImatgeMavenCompilacio](/Imatges/maven%20compile%20part2.png)
+
 
 Amb açò s'haurà generat una nova carpeta target a l'arrel del projecte, amb les classes generades, amb la següent estructura:
 
@@ -354,6 +360,8 @@ target
 11 directories, 4 files
 
 ```
+Captura del directori target:
+![ImatgeMavenDirectoriTarget](/Imatges/tree%20target%20maven%20compile.png)
 
 Per tal d'executar l'aplicació, hem d'indicar el classpath (opció -cp) i llençar l'aplicació, reemplaçant les barres del camí des del classpath fins la classe per punts (com/ieseljust/app/App -> com/ieseljust/app/App).
 
