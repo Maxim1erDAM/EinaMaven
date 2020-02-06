@@ -433,7 +433,7 @@ Captura del resultat:
 ![ImatgeMavenJarCompilacio](/Imatges/compilacio%20jar%20inicial.png)
 
 Captura 2 del resultat:
-![ImatgeMavenJarCompilacio](/Imatges/compilacio%20jar%20final.png)
+![ImatgeMavenJarCompilacio](/Imatges/compilacio%20a%20jar%20final.png)
 
 Amb açò s'ha realitzat la compilació del JAR, i els tests corresponents, generant tota l'estrucura del directori target següent:
 
