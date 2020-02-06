@@ -331,11 +331,8 @@ WARNING: All illegal access operations will be denied in a future release
 [INFO] ------------------------------------------------------------------------
 ```
 Captura de la meua máquina virtual: 
-Captura 1 del resultat:
+Captura del resultat:
 ![ImatgeMavenCompilacio](/Imatges/maven%20compile.png)
-Captura 2 del resultat:
-![ImatgeMavenCompilacio](/Imatges/maven%20compile%20part2.png)
-
 
 Amb açò s'haurà generat una nova carpeta target a l'arrel del projecte, amb les classes generades, amb la següent estructura:
 
