@@ -427,7 +427,7 @@ Veiem-ne el resultat de l'empaquetat:
 
 ```
 $ mvn package
-...
+```
 
 Captura del resultat:
 ![ImatgeMavenJarCompilacio](/Imatges/compilacio%20jar%20inicial.png)
@@ -435,7 +435,7 @@ Captura del resultat:
 Captura 2 del resultat:
 ![ImatgeMavenJarCompilacio](/Imatges/compilacio%20jar%20final.png)
 
-Amb açò s'ha realitzat la compilació i els tests corresponents, generant tota l'estrucura de directoris següent:
+Amb açò s'ha realitzat la compilació del JAR, i els tests corresponents, generant tota l'estrucura del directori target següent:
 
 ```
 target
